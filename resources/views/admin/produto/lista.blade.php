@@ -35,6 +35,8 @@
                 <tr>
                     <th>#</th>
                     <th>Nome do produto</th>
+                    <th>Categoria</th>
+                    <th>Marca</th>
                     <th>Opções</th>
                 </tr>
             </thead>
@@ -43,6 +45,8 @@
                 <tr>
                     <td>{{$loop->iteration}}</td>
                     <td>{{$produto->nome}}</td>
+                    <td>{{$produto->categoria->nome}}</td>
+                    <td>{{$produto->marca->nome}}</td>
                     <td>
                         @if($produto->deleted_at == null)
                             <form action="{{route('Produtos.destroy', $produto->id)}}" method="POST">
