@@ -44,7 +44,21 @@
                     <td>{{$loop->iteration}}</td>
                     <td>{{$produto->nome}}</td>
                     <td>
-                        <a class="acessibilidade mr-2 btn btn-info btn-sm" href="{{route('Produtos.edit', $produto->id)}}" > <i class="fas fa-edit"></i> Editar</a>
+                        @if($produto->deleted_at == null)
+                            <form action="{{route('Produtos.destroy', $produto->id)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <a class="acessibilidade mr-2 btn btn-info btn-sm" href="{{route('Produtos.edit', $produto->id)}}" > <i class="fas fa-edit"></i> Editar</a>
+                                <input class="btn btn-danger btn-sm" type="submit" value="Desativar" style="width: 80px;">  
+                            </form>
+                        @else
+                            <form action="{{route('Produto.ativa', $produto->id)}}" method="POST">
+                                @csrf
+                                @method('PUT')
+                                <a class="acessibilidade mr-2 btn btn-secondary btn-sm" href="#" > <i class="fas fa-edit"></i> Editar</a>
+                                <input class="btn btn-success btn-sm" type="submit" value="Ativar" style="width: 80px;">  
+                            </form>
+                        @endif
                     </td>
                 </tr>  
                 @empty

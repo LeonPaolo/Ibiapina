@@ -17,6 +17,7 @@ class CreateProdutosTable extends Migration
             $table->id();
             $table->string('nome');
             $table->text('descricao');
+            $table->char('status')->default('n');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('marca_id');
             $table->unsignedBigInteger('categoria_id');
