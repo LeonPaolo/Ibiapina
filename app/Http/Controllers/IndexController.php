@@ -10,4 +10,10 @@ class IndexController extends Controller
     {
         return view('index');
     }
+
+    public function detalhesProdutos()
+    {
+        return view('descricao');
+    }
 }
+

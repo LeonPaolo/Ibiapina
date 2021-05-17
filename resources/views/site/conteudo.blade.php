@@ -1,90 +1,46 @@
-        <!--navigation -->
-        <!-- Static navbar -->
-        <div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="/Site/images/logotransparente.png" alt="ASSAN"></a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right scroll-to">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                       
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div><!--container-->
-        </div><!--navbar-default-->
-        </header>
 
 
         <!--slider revolution 5 start-->
-        <article class="content">			
+        <article class="content">
             <div id="home" class="rev_slider_wrapper">
                 <!-- START REVOLUTION SLIDER 5.0 auto mode -->
-                <div id="rev_slider" class="rev_slider"  data-version="5.0">
-                    <ul>	
+                <div id="rev_slider" class="rev_slider" data-version="5.0">
+                    <ul>
                         <!-- SLIDE  -->
                         <li data-transition="fade">
 
                             <!-- MAIN IMAGE -->
-                            <img src="/Site/images/fundo1.png"  alt=""  width="1920" height="600">							
+                            <img src="/Site/images/fundo1.png" alt="" width="1920" height="600">
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption slider-title tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="center" data-hoffset="0" 
-                                 data-y="top" data-voffset="200"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="500" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 >Descartáveis e Variedades
+                            <div class="tp-caption slider-title tp-resizeme" data-transform_idle="o:1;" data-x="center"
+                                data-hoffset="0" data-y="top" data-voffset="200"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on">Descartáveis e
+                                Variedades
                             </div>
 
                             <!-- LAYER NR. 2 -->
-                            <div class="tp-caption slider-caption tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="center" data-hoffset="0" 
-                                 data-y="top" data-voffset="280"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="800" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 >
+                            <div class="tp-caption slider-caption tp-resizeme" data-transform_idle="o:1;"
+                                data-x="center" data-hoffset="0" data-y="top" data-voffset="280"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="800"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on">
                             </div>
                             <!-- LAYER NR. 3 -->
-                            <div class="tp-caption slider-button tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="center" data-hoffset="0" 
-                                 data-y="top" data-voffset="320"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="1200" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 ><a scroll-to href="/Site/#sobre">Ver Mais</a>
+                            <div class="tp-caption slider-button tp-resizeme" data-transform_idle="o:1;" data-x="center"
+                                data-hoffset="0" data-y="top" data-voffset="320"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on"><a scroll-to
+                                    href="/Site/#sobre">Ver Mais</a>
                             </div>
                         </li>
 
@@ -92,56 +48,36 @@
                         <li data-transition="fade">
 
                             <!-- MAIN IMAGE -->
-                            <img src="/Site/images/fundo1.png"  alt=""  width="1920" height="600">							
+                            <img src="/Site/images/fundo1.png" alt="" width="1920" height="600">
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption slider-title tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="right" data-hoffset="100" 
-                                 data-y="top" data-voffset="150"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="500" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 > Menor Preço
+                            <div class="tp-caption slider-title tp-resizeme" data-transform_idle="o:1;" data-x="right"
+                                data-hoffset="100" data-y="top" data-voffset="150"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on"> Menor Preço
                             </div>
 
                             <!-- LAYER NR. 2 -->
-                            <div class="tp-caption slider-caption tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="right" data-hoffset="100" 
-                                 data-y="top" data-voffset="230"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="800" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 >
+                            <div class="tp-caption slider-caption tp-resizeme" data-transform_idle="o:1;" data-x="right"
+                                data-hoffset="100" data-y="top" data-voffset="230"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="800"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on">
                             </div>
                             <!-- LAYER NR. 3 -->
-                            <div class="tp-caption slider-button tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="right" data-hoffset="100" 
-                                 data-y="top" data-voffset="280"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="1200" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 ><a scroll-to href="/Site/#sobre">Ver Mais</a>
+                            <div class="tp-caption slider-button tp-resizeme" data-transform_idle="o:1;" data-x="right"
+                                data-hoffset="100" data-y="top" data-voffset="280"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on"><a scroll-to
+                                    href="/Site/#sobre">Ver Mais</a>
                             </div>
                         </li>
 
@@ -149,61 +85,41 @@
                         <li data-transition="fade">
 
                             <!-- MAIN IMAGE -->
-                            <img src="/Site/images/fundo1.png"  alt=""  width="1920" height="600">							
+                            <img src="/Site/images/fundo1.png" alt="" width="1920" height="600">
 
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption slider-title tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="center" data-hoffset="0" 
-                                 data-y="top" data-voffset="200"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="500" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 >Melhor Atendimento
+                            <div class="tp-caption slider-title tp-resizeme" data-transform_idle="o:1;" data-x="center"
+                                data-hoffset="0" data-y="top" data-voffset="200"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on">Melhor Atendimento
                             </div>
 
                             <!-- LAYER NR. 2 -->
-                            <div class="tp-caption slider-caption tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="center" data-hoffset="0" 
-                                 data-y="top" data-voffset="280"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="800" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 >
+                            <div class="tp-caption slider-caption tp-resizeme" data-transform_idle="o:1;"
+                                data-x="center" data-hoffset="0" data-y="top" data-voffset="280"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="800"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on">
                             </div>
                             <!-- LAYER NR. 3 -->
-                            <div class="tp-caption slider-button tp-resizeme" 							
-
-                                 data-transform_idle="o:1;"
-                                 data-x="center" data-hoffset="0" 
-                                 data-y="top" data-voffset="320"
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                                 data-start="1200" 
-                                 data-splitin="none" 
-                                 data-splitout="none" 
-                                 data-responsive_offset="on" 
-                                 ><a scroll-to href="/Site/#sobre">Ver Mais</a>
+                            <div class="tp-caption slider-button tp-resizeme" data-transform_idle="o:1;" data-x="center"
+                                data-hoffset="0" data-y="top" data-voffset="320"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1200"
+                                data-splitin="none" data-splitout="none" data-responsive_offset="on"><a scroll-to
+                                    href="/Site/#sobre">Ver Mais</a>
                             </div>
                         </li>
-                    </ul>				
+                    </ul>
                 </div><!-- END REVOLUTION SLIDER -->
-            </div>			
+            </div>
         </article>
 
         <!--slider revolution 5 end-->
@@ -213,20 +129,24 @@
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="blocks-col">
-                            <a href="{{('descartaveis') }}"> <img src="/Site/images/descartaveis.jpg" alt="" class="img-responsive">
-                            <div class="block-overlay">
-                                <h4>Descartáveis</h4>
-                                <p></p>
-                            </div></a>
+                            <a class="scroll-to" href="#produtos"> <img src="/Site/images/descartaveis.jpg" alt=""
+                                    class="img-responsive">
+                                <div class="block-overlay">
+                                    <h4>Descartáveis</h4>
+                                    <p></p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="blocks-col">
-                        <a href="{{('produtos') }}">  <img src="/Site/images/limpeza.jpg" alt="" class="img-responsive">
-                            <div class="block-overlay">
-                                <h4>Produtos de Limpeza</h4>
-                                <p></p> </p>
-                            </div></a>
+                            <a href="#produtos"> <img src="/Site/images/limpeza.jpg" alt="" class="img-responsive">
+                                <div class="block-overlay">
+                                    <h4>Produtos de Limpeza</h4>
+                                    <p></p>
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -240,7 +160,8 @@
                     </div>
                 </div>
             </div>
-        </div><!--block main-->
+        </div>
+        <!--block main-->
 
 
         <div class="space-60"></div>
@@ -256,8 +177,10 @@
                             <p>
                                 Ser a maior referência nas vendas de produtos descartáveis e variedades do estado. </p>
                         </div>
-                    </div><!--features box-->
-                </div><!--features column-->
+                    </div>
+                    <!--features box-->
+                </div>
+                <!--features column-->
                 <div class="col-sm-4 margin-b-30">
                     <div class="features-box blue">
                         <div class="icon">
@@ -266,11 +189,14 @@
                         <div class="text">
                             <h3>Missão</h3>
                             <p>
-                                Comercializar embalagens plásticas com segurança e excelência para satisfação dos clientes.
+                                Comercializar embalagens plásticas com segurança e excelência para satisfação dos
+                                clientes.
                             </p>
                         </div>
-                    </div><!--features box-->
-                </div><!--features column-->
+                    </div>
+                    <!--features box-->
+                </div>
+                <!--features column-->
                 <div class="col-sm-4 margin-b-30">
                     <div class="features-box">
                         <div class="icon">
@@ -280,486 +206,371 @@
                             <h3>Valor</h3>
                             <p>
                                 • Ética <br>
-                                • Satisfação dos clientes<br>                             
+                                • Satisfação dos clientes<br>
                                 • Trabalho em equipe<br>
                                 • Excelência no atendimento<br>
-                               
+
                         </div>
-                    </div><!--features box-->
-                </div><!--features column-->
+                    </div>
+                    <!--features box-->
+                </div>
+                <!--features column-->
             </div>
         </div>
 
         <!--new arrivals-->
         <section class="featured-products">
             <div class="container">
-                <h2 class="section-heading">Marcas Populares</h2>
+                <h2 class="section-heading">Mais Vendidos</h2>
                 <div class="row">
                     <div class="col-sm-6 col-md-3 ">
                         <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/havaianas.png" alt="" class="img-responsive"></a>
+                            <a href="/Site/#"><img src="/Site/images/produtos/havaianas.png" alt=""
+                                    class="img-responsive"></a>
                             <div class="title">
                                 <h5>Havaianas<br>Atacado e Varejo</h5>
                                 <span class="price"></span>
                             </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
+                        </div>
+                        <!--item holder-->
+                    </div>
+                    <!--col end-->
                     <div class="col-sm-6 col-md-3 ">
                         <div class="item_holder ">
-                            
-                            <a href="/Site/#"><img src="/Site/images/produtos/galvanotek.png" alt="" class="img-responsive"></a>
+
+                            <a href="/Site/#"><img src="/Site/images/produtos/galvanotek.png" alt=""
+                                    class="img-responsive"></a>
                             <div class="title">
                                 <h5>Embalagens Galvanotek<br>Atacado e Varejo</h5>
                                 <span class="price"></span>
                             </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
+                        </div>
+                        <!--item holder-->
+                    </div>
+                    <!--col end-->
                     <div class="col-sm-6 col-md-3 ">
                         <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/plaszon.png" alt="" class="img-responsive"></a>
+                            <a href="/Site/#"><img src="/Site/images/produtos/plaszon.png" alt=""
+                                    class="img-responsive"></a>
                             <div class="title">
                                 <h5>Sacolas Plaszom <br>Atacado e Varejo</h5>
                                 <span class="price"></span>
                             </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
+                        </div>
+                        <!--item holder-->
+                    </div>
+                    <!--col end-->
                     <div class="col-sm-6 col-md-3 ">
                         <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/wyda.png" alt="" class="img-responsive"></a>
+                            <a href="/Site/#"><img src="/Site/images/produtos/wyda.png" alt=""
+                                    class="img-responsive"></a>
                             <div class="title">
                                 <h5>Wyda Embalagens<br>Atacado e Varejo</h5>
                                 <span class="price"></span>
                             </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                </div><!--row-->
+                        </div>
+                        <!--item holder-->
+                    </div>
+                    <!--col end-->
+                </div>
+                <!--row-->
             </div>
-        <!--end new arrivals-->
-        <div class='space-60'></div>
-        <!--parallax section start-->
-      
-        <section class="parallax">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1 text-center">
-                        <h1><span>Fale com um de nossos vendedores</span></h1>
-                        <a  href='/Site/https://web.whatsapp.com/send?phone=5596981373836&text=' target="_blank" class="btn web btn-skin btn-lg"><i class="fa fa-whatsapp"> </i> Falar com um vendedor </a>
-                        <a  href='/Site/https://api.whatsapp.com/send?phone=5596981373836&text=' target="_blank" class="btn Api btn-skin btn-lg"><i class="fa fa-whatsapp"> </i> Falar com um vendedor </a>
+            <!--end new arrivals-->
+            <div class='space-60'></div>
+            <!--parallax section start-->
+
+            <section class="parallax">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1 text-center">
+                            <h1><span>Fale com um de nossos vendedores</span></h1>
+                            <a href='/Site/https://web.whatsapp.com/send?phone=5596981373836&text=' target="_blank"
+                                class="btn web btn-skin btn-lg"><i class="fa fa-whatsapp"> </i> Falar com um vendedor
+                            </a>
+                            <a href='/Site/https://api.whatsapp.com/send?phone=5596981373836&text=' target="_blank"
+                                class="btn Api btn-skin btn-lg"><i class="fa fa-whatsapp"> </i> Falar com um vendedor
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Campo de Pesquisa Manual-->
+            <div id="produtos" class='space-60'></div>
+            <div class="search-bar" style="display: none;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <form>
+                                <input type="text" class="form-control" placeholder="Escreva sua busca">
+                                <span class="search-close"><i class="fa fa-times"></i></span>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        
-        <!--parallax section end-->
-        <div id="produtos"class='space-60'></div>
 
-        <!--popular products-->
-        <section class="featured-products">
-            <div class="container">
-                <h2 class="section-heading">Produtos Populares</h2>
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/kitpote.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Kit Pote Plaszom 200 ml<br> Atacado e varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
+
+            <!--popular products-->
+            <section class="featured-products">
+                <div class="container">
+                    <h2 class="section-heading">Produtos</h2>
+                    <div class="col-sm-3 input-field">
+                        <form action="" class="form form-inline" method="post">
+                            <label for="pesquisa">Filtrar por: Marca</label>
+                            <select name="nomeMarca"  id="idMarca" class="browser-defaut">
+                                <option value="">Selecione</option>
+                                <option value="marca">Plaszom</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-sm-3 input-field">
+                        <form action="" class="form form-inline" method="post">
+                            <label for="pesquisa">Categorias</label>
+                            <select name="nomeMarca" onChange="carregaUsuario()" id="idMarca" class="browser-defaut">
+                                <option value="">Selecione</option>
+                                <option value="marca">Descartaveis</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-sm-3 input-field">
+                        <form action="" class="form" method="post">
+                            <label for="pesquisa">Mais Vendidos</label>
+                            <input type="checkbox" aria-label="...">
+                        </form>
+                    </div>
+
+                    <a href="javascript:void(0)" class="search-toggle"><i class="fa fa-search"></i>  Buscar</a>
+                    <div class="space-60"></div>
+
+                    <!-- Div de lista de produtos -->
+                    <div id='exemplo' class="col-sm-6 col-md-3 ">
                         <div class="item_holder ">
-                           
-                            <a href="/Site/#"><img src="/Site/images/produtos/papelKraft.png" alt="" class="img-responsive"></a>
+                            <a href="#"><img src="/Site/images/produtos/plaszon.png" alt="" class="img-responsive"></a>
                             <div class="title">
-                                <h5>Sacola kraft Delivery Pluma <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
+                                <h4>Sacolas Plasticas</h4>
+                                <span class="price">Plaszom</span>
                             </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/luvarvabene.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Cx. Luvas Vinil Vabene <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/fitas.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Fitas Adesivas Eurocel <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                </div><!--row-->
+                            <div class="space-15"></div> 
+                            <a href="{{'detalhes'}}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
+                                data-original-title="Ver Detalhes">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <!--item holder-->
+                </div>
+                <!--col end-->
+                </div>
+                <!--row-->
+                </div>
+                </div>
+            </section>
 
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/cristalcopo.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5> Copos Descartáveis CristalCopo <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            
-                            <a href="/Site/#"><img src="/Site/images/produtos/vinivolk.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Cx. Luvas de Vinil vinivolk<br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/MarmitasTotalplast.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Marmitex EPS Total Plast <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/hamburgueira.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>hamburgueira EPS Total Plast <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                </div><!--row-->
+            <!--end Popular products-->
 
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/mascaranobre.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Máscara Descartáveis Nobre <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
+            <div class="space-50"></div>
+            <section id="registry" class="gift-registry" data-stellar-background-ratio="0.3">
+                <div class="space-100"></div>
+                <div class="container">
+                    <div class="row margin-b-50">
+                        <div class="col-sm-8 col-sm-offset-2 text-center">
+                            <div class="center-title">
+                                <h2>Marcas Parceiras</h2>
+                                <p>
+                                </p>
+                                <hr>
                             </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/destaque_lava_louca.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Detergente lava louças Ipê <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
+                        </div>
+                    </div>
+                    <div class="row gf-row">
+                        <div class="col-sm-12 col-md-offset-0 col-xs-offset-3  text-center">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="/Site/#">
+                                        <img src="/Site/images/wyda.png" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="/Site/#">
+                                        <img src="/Site/images/galvanotek.png" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="/Site/#">
+                                        <img src="/Site/images/plaszom.png" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="/Site/#">
+                                        <img src="/Site/images/totalplast.png" alt="" class="img-responsive">
+                                    </a>
+                                </div>
+
                             </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/bemtevi.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Lava roupas Bem-te-Vi <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            
-                            <a href="/Site/#"><img src="/Site/images/produtos/alcool.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Álcool líquido 70º Santa Cruz <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                </div><!--row-->
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/pizza.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Embalagens para Pizza<br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/Sacolas.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Sacolas Kraft com Alças <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/garrafa.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Garrafa Plástica para Sucos<br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            
-                            <a href="/Site/#"><img src="/Site/images/produtos/luva.png" alt="" class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Luvas de Vinil ViniFlex <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div><!--item holder-->
-                    </div><!--col end-->
-                </div><!--row-->
-            </div>
-        </section>
-        <!--end Popular products-->
-        <div class="space-50"></div>
-        <section id="registry" class="gift-registry" data-stellar-background-ratio="0.3">
-            <div class="space-100"></div>
-            <div class="container">
-                <div class="row margin-b-50">
-                    <div class="col-sm-8 col-sm-offset-2 text-center">
-                        <div class="center-title">
-                            <h2>Marcas Parceiras</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!--section end-->
+                <div class="space-60"></div>
+                <!--features section start-->
+
+                <!--features section end-->
+                <div class="space-30"></div>
+                <!--partners-->
+
+                <div class="row wow fadeInDown" data-wow-delay=".1s">
+                    <div class="col owl-carousel owl-clients owl-theme">
+                        <div class="item">
+                            <img src="/Site/images/plaszom.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/plaszom.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/plaszom.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/plaszom.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/plaszom.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/cl-1.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/cl-2.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/cl-3.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/cl-4.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="/Site/images/cl-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!--end partners-->
+                <!--breadcrumb start-->
+                <div id="contact" class="breadcrumb-wrapper">
+                    <div class="container">
+                        <h1>Contato!</h1>
+                    </div>
+                </div>
+                <!--end breadcrumb-->
+
+                <div class="space-60"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Entre em contato conosco! </h3>
                             <p>
+                                Será um Prazer Atendê-lo.
                             </p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gf-row">
-                    <div class="col-sm-12 col-md-offset-0 col-xs-offset-3  text-center">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="/Site/#">
-                                    <img src="/Site/images/wyda.png" alt="" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="/Site/#">
-                                    <img src="/Site/images/galvanotek.png" alt="" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="/Site/#">
-                                    <img src="/Site/images/plaszom.png" alt="" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="/Site/#">
-                                    <img src="/Site/images/totalplast.png" alt="" class="img-responsive">
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-      
-        <!--section end-->
-        <div class="space-60"></div>
-        <!--features section start-->
-       
-        <!--features section end-->
-        <div class="space-30"></div>
-        <!--partners-->
-       
-        <div class="row wow fadeInDown" data-wow-delay=".1s">
-            <div class="col owl-carousel owl-clients owl-theme">
-                <div class="item">
-                    <img src="/Site/images/plaszom.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/plaszom.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/plaszom.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/plaszom.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/plaszom.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/cl-1.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/cl-2.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/cl-3.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/cl-4.png" alt="">
-                </div>
-                <div class="item">
-                    <img src="/Site/images/cl-5.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
 
-        <!--end partners-->
- <!--breadcrumb start-->
- <div id="contact" class="breadcrumb-wrapper">
-    <div class="container">
-        <h1>Contato!</h1>
-    </div>
-</div>
-<!--end breadcrumb-->
 
-<div  class="space-60"></div>
-<div  class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Entre em contato conosco! </h3>
-            <p>
-                Será um Prazer Atendê-lo.
-            </p>
-            
-           
-            <form name="sentMessage" id="contactForm" method="post" novalidate="">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 controls">
-                            
-                                <input type="text" class="form-control" placeholder="Nome Completo" id="name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
-                                <p class="help-block"></p>
-                            </div>
+                            <form name="sentMessage" id="contactForm" method="post" novalidate="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 controls">
+
+                                                <input type="text" class="form-control" placeholder="Nome Completo"
+                                                    id="name" required=""
+                                                    data-validation-required-message="Please enter your name."
+                                                    aria-invalid="false">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="row control-group">
+                                            <div class="form-group col-xs-12 controls">
+
+                                                <input type="email" class="form-control" placeholder="Seu E-mail"
+                                                    id="email" required=""
+                                                    data-validation-required-message="Please enter your email address.">
+                                                <p class="help-block"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 controls">
+
+                                        <textarea rows="5" class="form-control" placeholder="Mensagem" id="message"
+                                            required=""
+                                            data-validation-required-message="Please enter a message."></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+
+                                <div id="success"></div>
+                                <div class="row">
+                                    <div class="form-group col-xs-12">
+                                        <button type="submit" class="btn btn-skin btn-lg">Enviar Mensagem</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <ul class="list-unstyled contact contact-info">
+                                <li>
+                                    <p><strong><i class="fa fa-map-marker"></i> Endereço:</strong> Av: Felipe Camarão
+                                        1508 - Buritizal - Macapá / Ap</p>
+                                </li>
+                                <li>
+                                    <p><strong><i class="fa fa-envelope"></i> E-mail:</strong> <a
+                                            href="/Site/#">ibiapina1descartaveis@yahoo.com</a></p>
+                                </li>
+                                <li>
+                                    <p><strong><i class="fa fa-phone"></i> Telefone:</strong> (96) 98137-3836 </p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.271887340681!2d-51.074634!3d0.0239479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68e27d8a1a1dab66!2sIBIAPINA%20DESCART%C3%81VEIS!5e0!3m2!1spt-BR!2sbr!4v1619811380033!5m2!1spt-BR!2sbr"
+                                width="50px" height="50px" allowfullscreen="" loading="lazy"></iframe>
                         </div>
 
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 controls">
-                              
-                                <input type="email" class="form-control" placeholder="Seu E-mail" id="email" required="" data-validation-required-message="Please enter your email address.">
-                                <p class="help-block"></p>
-                            </div>
-                        </div> 
-                    </div>
+
                 </div>
-                <div class="row control-group">
-                    <div class="form-group col-xs-12 controls">
-                        
-                        <textarea rows="5" class="form-control" placeholder="Mensagem" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
-                        <p class="help-block"></p>
-                    </div>
                 </div>
+                <a href="/Site/https://web.whatsapp.com/send?phone=5596981373836&text=" target="_blank" class="web"
+                    style="position:fixed;bottom:20px;right:30px;">
+                    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
+                            fill="#4CAF50" />
+                        <path
+                            d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                            fill="#FAFAFA" />
+                    </svg>
+                </a>
+                <a href="/Site/https://api.whatsapp.com/send?phone=5596981373836&text=" target="_blank" class="Api"
+                    style="position:fixed;bottom:20px;right:30px;">
+                    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
+                            fill="#4CAF50" />
+                        <path
+                            d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                            fill="#FAFAFA" />
+                    </svg>
+                </a>
+                <div class="space-60"></div>
+                <!--footer start-->
                
-                <div id="success"></div>
-                <div class="row">
-                    <div class="form-group col-xs-12">
-                        <button type="submit" class="btn btn-skin btn-lg">Enviar Mensagem</button>
-                    </div>
-                </div>
-            </form>
-            <ul class="list-unstyled contact contact-info">
-                <li><p><strong><i class="fa fa-map-marker"></i> Endereço:</strong> Av: Felipe Camarão 1508 - Buritizal - Macapá / Ap</p></li> 
-                <li><p><strong><i class="fa fa-envelope"></i> E-mail:</strong> <a href="/Site/#">ibiapina1descartaveis@yahoo.com</a></p></li>
-                <li> <p><strong><i class="fa fa-phone"></i> Telefone:</strong> (96) 98137-3836 </p></li>
-                
-            </ul>  
-        </div>
-            
-        <div class="col-md-6 embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15959.271887340681!2d-51.074634!3d0.0239479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68e27d8a1a1dab66!2sIBIAPINA%20DESCART%C3%81VEIS!5e0!3m2!1spt-BR!2sbr!4v1619811380033!5m2!1spt-BR!2sbr" width="50px" height="50px" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-
-    </div>
-  
-    
-    </div>
-</div>
-<a href="/Site/https://web.whatsapp.com/send?phone=5596981373836&text="
-target="_blank" class="web"
-style="position:fixed;bottom:20px;right:30px;">
-<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
-</a>
-<a href="/Site/https://api.whatsapp.com/send?phone=5596981373836&text="
-target="_blank" class="Api"
-style="position:fixed;bottom:20px;right:30px;">
-<svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
-</a>
-<div class="space-60"></div>
-        <!--footer start-->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 margin-b-30">
-                        <h3>Sobre</h3>
-                        <p style="text-align: justify;">
-                            "Ibiapina Descartáveis e Variedades, uma loja completa no ramo de descartáveis, produtos para Delivery, Higiene Pessoal, Produtos de Beleza, Produtos de Limpeza, Acessórios para Lar e Escritórios. Melhor atendimento e o menor preço. Trabalhamos no Atacado e Varejo."                        </p>
-                        <ul class="list-inline social-footer">
-                            <li><a href="/Site/https://www.facebook.com/IbiapinaDescartaveis" data-toggle="tooltip" data-placement="top" target="_blank" data-title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="/Site/https://www.instagram.com/ibiapinadescartaveis_/" target="_blank" data-toggle="tooltip" data-placement="top" data-title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="/Site/https://api.whatsapp.com/send?phone=5596981373836&text="  data-toggle="tooltip" data-placement="top" target="_blank" data-title="Whatsapp"><i class="fa fa-whatsapp"></i></a></li>
-                        
-                        </ul>
-                    </div>
-                    
-
-                    <div class="col-md-4 margin-b-30">
-                        <h3>Meta Tags </h3>
-                        <div class="tags clearfix">
-                            <a href="/Site/#">Descartáveis</a>
-                            <a href="/Site/#">Variedades</a>
-                            <a href="/Site/#">Produtos de Limpeza</a>
-                            <a href="/Site/#">Acessórios</a>
-                            <a href="/Site/#">Casa</a>
-                            <a href="/Site/#">Escritórios</a>
-                            <a href="/Site/#">Atacado</a>
-                            <a href="/Site/#">Varejo</a>
-                            <a href="/Site/#">Delivery</a>                            
-                        </div>
-                    </div>
-                    <div class="col-md-4 margin-b-30">
-                        <h3>Contato</h3>
-                        <div class="media">
-                            <div class="media-left">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">96 98137-3836</h4>
-                            </div>
-                        </div>
-                      
-                        <div class="media">
-                            <div class="media-left">
-                                <i class="fa fa-home"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Av: Felipe Camarão 1508 - Buritizal - Macapá/Ap</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="footer-bottom">
-            <div class="container text-center">
-                <h3><a href="/Site/index.html"><img src="/Site/images/logotransparente.png" width="150px" alt=""></a></h3>
-                <ul class="list-inline">
-                    <li><a href="/Site/#">Home</a></li>
-                    <li><a href="/Site/#sobre">Sobre</a></li>
-                    <li><a href="/Site/#produtos">Produtos</a></li>
-                    <li><a href="/Site/#contact">Contato</a></li>
-                </ul>
-              
-                <span class="copyright">&copy; Copyright 2021, Todos os direitos reservados a Ibiapina Descartáveis e Variedades.</span>
-            </div>
-            <div class="container text-center">
-                <span class="copyright">Desenvolvido por </span>
-                <h3><a href=h/Site/ttps://agenciawds.com.br target="_blank"> <img src="/Site/images/wds.png" width="80px" alt=""></a></h3>
-           </div>
-        </div>
-        <!--footer end-->

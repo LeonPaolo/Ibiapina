@@ -5,5 +5,6 @@
 @endsection
 @section('javascript')
     @include('site.javascript')
+    
 @endsection
 

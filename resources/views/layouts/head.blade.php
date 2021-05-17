@@ -18,6 +18,7 @@
         <link href="{{ asset('/Site/pe-icons/Pe-icon-7-stroke.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('/Site/custom-scrollbar/jquery.mCustomScrollbar.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('/Site/css/yamm.css') }}" rel="stylesheet">
+
         <!--revolution css-->
         <link href="{{ asset('/Site/revolution/css/navigation.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('/Site/revolution/css/layers.css') }}" type="text/css" rel="stylesheet">
@@ -26,15 +27,123 @@
         <link href="{{ asset('/Site/css/style.css') }}" type="text/css" rel="stylesheet">
         <link rel="icon" href="{{ asset('/Site/images/ico.png') }}" type="image/gif" sizes="16x16">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="/Site/https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="/Site/https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+     
     </head>
+            <!--navigation -->
+        <!-- Static navbar -->
+        <div class="navbar navbar-default navbar-static-top yamm sticky" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="/Site/images/logotransparente.png"
+                            alt="ASSAN"></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right scroll-to">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--container-->
+        </div>
+        <!--navbar-default-->
+        </header>
+
     <body>
         @yield('conteudo')
-        @yield('javascript')
+        @yield('javascript')        
     </body>
+    <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 margin-b-30">
+                                <h3>Sobre</h3>
+                                <p style="text-align: justify;">
+                                    "Ibiapina Descartáveis e Variedades, uma loja completa no ramo de descartáveis,
+                                    produtos para Delivery, Higiene Pessoal, Produtos de Beleza, Produtos de Limpeza,
+                                    Acessórios para Lar e Escritórios. Melhor atendimento e o menor preço. Trabalhamos
+                                    no Atacado e Varejo." </p>
+                                <ul class="list-inline social-footer">
+                                    <li><a href="/Site/https://www.facebook.com/IbiapinaDescartaveis"
+                                            data-toggle="tooltip" data-placement="top" target="_blank"
+                                            data-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="/Site/https://www.instagram.com/ibiapinadescartaveis_/" target="_blank"
+                                            data-toggle="tooltip" data-placement="top" data-title="Instagram"><i
+                                                class="fa fa-instagram"></i></a></li>
+                                    <li><a href="/Site/https://api.whatsapp.com/send?phone=5596981373836&text="
+                                            data-toggle="tooltip" data-placement="top" target="_blank"
+                                            data-title="Whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="col-md-4 margin-b-30">
+                                <h3>Meta Tags </h3>
+                                <div class="tags clearfix">
+                                    <a href="/Site/#">Descartáveis</a>
+                                    <a href="/Site/#">Variedades</a>
+                                    <a href="/Site/#">Produtos de Limpeza</a>
+                                    <a href="/Site/#">Acessórios</a>
+                                    <a href="/Site/#">Casa</a>
+                                    <a href="/Site/#">Escritórios</a>
+                                    <a href="/Site/#">Atacado</a>
+                                    <a href="/Site/#">Varejo</a>
+                                    <a href="/Site/#">Delivery</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 margin-b-30">
+                                <h3>Contato</h3>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">96 98137-3836</h4>
+                                    </div>
+                                </div>
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="fa fa-home"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Av: Felipe Camarão 1508 - Buritizal - Macapá/Ap</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="footer-bottom">
+                    <div class="container text-center">
+                        <h3><a href="/Site/index.html"><img src="/Site/images/logotransparente.png" width="150px"
+                                    alt=""></a></h3>
+                        <ul class="list-inline">
+                            <li><a href="/Site/#">Home</a></li>
+                            <li><a href="/Site/#sobre">Sobre</a></li>
+                            <li><a href="/Site/#produtos">Produtos</a></li>
+                            <li><a href="/Site/#contact">Contato</a></li>
+                        </ul>
+
+                        <span class="copyright">&copy; Copyright 2021, Todos os direitos reservados a Ibiapina
+                            Descartáveis e Variedades.</span>
+                    </div>
+                    <div class="container text-center">
+                        <span class="copyright">Desenvolvido por </span>
+                        <h3><a href=h/Site/ttps://agenciawds.com.br target="_blank"> <img src="/Site/images/wds.png"
+                                    width="80px" alt=""></a></h3>
+                    </div>
+                </div>
+                <!--footer end-->
 </html>
