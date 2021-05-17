@@ -15,4 +15,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::resource('/Categorias', 'CategoriaController');
     Route::resource('/Produtos', 'ProdutoController');
     Route::resource('/Marcas', 'MarcaController');
+    Route::put('/Produto/{id}', 'ProdutoController@ativar')->name('Produto.ativa');
+    Route::resource('/User', 'UserController');
+    Route::put('/Senha/{id}', 'UserController@senha')->name('Senha.update');
 });

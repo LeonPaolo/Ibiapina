@@ -64,23 +64,31 @@
                         </div>
                     </div>
                     <div class="form-row">
-                      <div class="form-group  col-lg-8">
-                          <label for="descricao"> Descrição: </label>
-                          <textarea name="descricao"  id="descricao" class="form-control" rows="1" placeholder="Descreva o produto."></textarea>
-                      </div>
-                      <div class="col-lg-4 form-group">
+                        <div class="form-group col-lg-3">
+                            <div class="callout callout-primary">
+                                <label for="vendidos"> Produto mais vendido:</label> <br>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="v1" name="vendido" value="s">
+                                    <label class="custom-control-label acessibilidade" for="v1">Sim</label>
+                                </div>
+                                
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="v2" name="vendido" value="n" checked>
+                                    <label class="custom-control-label acessibilidade" for="v2">Não</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group  col-lg-6">
+                            <label for="descricao"> Descrição: </label>
+                            <textarea name="descricao"  id="descricao" class="form-control" rows="1" placeholder="Descreva o produto."></textarea>
+                        </div>
+                      <div class="col-lg-3 form-group">
                         <label for="foto">Anexe até três fotos:</label>
                         <div class="custom-file">
                           <img src="" class="img-thumbnail" style="height:200px; display: none;" id="img">
                             <input type="file" accept="image/*" id="foto" name="fotos[]" class="custom-file-input" aria-describedby="foto" multiple>                     
                             <label class="custom-file-label" for="foto" data-browse="Anexar">Selecione</label>
                         </div>
-                        @error('foto')
-                           <span class="invalid-feedback"></span>
-                           <div class="alert text-danger">
-                                <small>{{ $message }}  </small> 
-                           </div>
-                        @enderror
                     </div>
                     <div class="form-row" id="fotos">
                         <!-- Recebe as previas das fotos -->
@@ -110,7 +118,7 @@ Todos os direitos reservados.
     <script src="{{ asset('/Site/assets/bower_components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('/validation/jquery.validate.min.js') }}"></script>
     <script>
-        $("#produto").keyup(function(e) {
+        $("#produto, #descricao").keyup(function(e) {
             var str = $(this).val();
             str = str.replace(/(^|\s|$)(?!de|do|d$)(.)/g, (geral, match1, match2) => match1 + match2.toUpperCase());
             $(this).val(str);

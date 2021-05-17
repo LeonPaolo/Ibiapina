@@ -276,6 +276,12 @@ return [
             
             ],
         ],
+        ['header' => 'CONTA'],
+        [
+            'text' => 'MEUS DADOS',
+            'route'  => 'User.create',
+            'icon' => 'fas fa-fw fa-user',
+        ],
     ],
 
     /*
