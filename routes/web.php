@@ -5,7 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'IndexController@index');
-Route::get('/detalhes', 'IndexController@detalhesProdutos');
+Route::get('/produtos', 'IndexController@produtos');
+Route::get('/produtos/detalhes', 'IndexController@detalhesProdutos');
 
 Auth::routes(['register'=> false, 'reset' => false, 'verify' => false]);
 
