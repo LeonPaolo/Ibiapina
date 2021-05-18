@@ -9,7 +9,7 @@
 
         <div class="space-60"></div>
         <div class="container">
-        <a class="btn btn-skin btn-lg" href="/#produtos"> Voltar </a>
+        <a class="btn btn-skin btn-lg" href="/produtos"> Voltar </a>
         <div class="space-60"></div>
             <div class="row single-product">
 

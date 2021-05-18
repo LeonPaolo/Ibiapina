@@ -15,5 +15,11 @@ class IndexController extends Controller
     {
         return view('descricao');
     }
+
+    public function produtos()
+    {
+        return view('listarProdutos');
+    }
 }
+
 
