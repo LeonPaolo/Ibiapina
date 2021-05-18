@@ -310,20 +310,17 @@
                     @foreach($produtos as $produto)
                     <div id='exemplo' class="col-sm-6 col-md-3 ">
                         <div class="item_holder ">
-                            <a href="#"><img src="/storage/{{ $protuto->images }}" alt="" class="img-responsive"></a>
+                            <a href="#"><img src="/Site/images/produtos/plaszon.png" alt="" class="img-responsive"></a>
                             <div class="title">
                                 <h4>{{ $produto->nome }}</h4>
-                                <span class="price">{{ $produto->marca->nome }}</span>
+                                <span class="price">{{ $produto->categoria->nome }}</span>
                             </div>
                             <div class="space-15"></div> 
-                            <a href="{{'produtos/detalhes'}}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
+                            <a href="{{ route('detalhes', $produto->id ) }}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
                                 data-original-title="Ver Detalhes">Ver Detalhes</a>
                         </div>
                     </div>
                     @endforeach
-                    <div class="p-1 d-flex justify-content-center" style="border-top: 1px solid #ddd;">
-                        {{$produtos->links()}}
-                    </div>
                     <!--item holder-->
                 </div>
                 <div class="row">

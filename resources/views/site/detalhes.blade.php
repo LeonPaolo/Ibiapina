@@ -17,27 +17,20 @@
                     <div class="row">
                         <div class="col-md-5 margin-b-30">
                             <div id="product-single"  class="owl-carousel owl-theme single-product-slider">
+                                @foreach($produto->images as $imgs)
                                 <div class="item">
-                                    <a href="/Site/images/produtos/plaszon.png" data-lightbox="roadtrip"> <img src="/Site/images/produtos/plaszon.png" alt="Product image" class="img-responsive"></a>                              
+                                    <a href="/Site/images/produtos/plaszon.png" data-lightbox="roadtrip"> <img src="/storage/{{ $imgs->imagem }}" alt="Product image" class="img-responsive"></a>                              
                                 </div>
-                                <div class="item">
-                                    <a href="/Site/images/produtos/plaszon.png" data-lightbox="roadtrip"> <img src="/Site/images/produtos/plaszon.png"  alt="Product image" class="img-responsive"></a>                              
-                                </div>
-                                <div class="item">
-                                    <a href="/Site/images/produtos/plaszon.png" data-lightbox="roadtrip"> <img src="/Site/images/produtos/plaszon.png"  alt="Product image" class="img-responsive"></a>                              
-                                </div>
-                                <div class="item">
-                                    <a href="/Site/images/produtos/plaszon.png" data-lightbox="roadtrip"> <img src="/Site/images/produtos/plaszon.png"  alt="Product image" class="img-responsive"></a>                              
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="product-detail-desc">
-                                <h3 class="title"><a href="#">Sacolas Plasticas Plaszom</a></h3>
+                                <h3 class="title"><a href="#">{{ $produto->nome }} - {{ $produto->marca->nome }}</a></h3>
                               
                               
                                 <p style='text-align:justify;'>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Venda no Atacado de Varejo.
                                 </p>
                              
                                 <div class="add-buttons">
@@ -62,12 +55,9 @@
                                 <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane active" id="desc">
                                        <p style='text-align:justify;'>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            {{ $produto->descricao }}
                                         </p>
-                                        <p style='text-align:justify;'>
-                                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-                                        </p>
-                                    </div>
+                                    </div> 
                                    
                                     
                                 </div>
@@ -79,71 +69,31 @@
                 </div>
 
 </div>
-            <div class="space-60"></div>
+        <div class="space-60"></div>
             <div class="similar-products">
                 <h2 class="section-heading">Produtos Similares</h2>
-                <!--owl carousel-->
-                <div class="row">
-                    <div id="owl-slider" class="col-md-12 owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="item_holder">
-                                <a href="#"><img src="images/women/1.jpg" alt="" class="img-responsive"></a>
-                                <div class="title">
-                                    <h5>Sky-Blue <br>Short Skirt</h5>
-                                    <span class="price">Atacado de Varejo</span>
-                                </div>
-                            </div><!--item holder-->
-                        </div> <!--item loop-->
-                        <div class="item">
-                            <div class="item_holder">
-                                <a href="#"><img src="images/men/1.jpg" alt="" class="img-responsive"></a>
-                                <div class="title">
-                                    <h5>Dark-Blue <br>Men's t-shirt</h5>
-                                    <span class="price">Atacado de Varejo</del></span>
-                                </div>
-                            </div><!--item holder-->
-                        </div> <!--item loop-->
-                        <div class="item">
-                            <div class="item_holder">
-                                <a href="#"><img src="images/women/2.jpg" alt="" class="img-responsive"></a>
-                                <div class="title">
-                                    <h5>Black <br>Short Skirt</h5>
-                                    <span class="price">Atacado de Varejo</span>
-                                </div>
-                            </div><!--item holder-->
-                        </div> <!--item loop-->
-                        <div class="item">
-                            <div class="item_holder">
-                                <a href="#"><img src="images/men/3.jpg" alt="" class="img-responsive"></a>
-                                <div class="title">
-                                    <h5>Black <br>analog watch</h5>
-                                    <span class="price">Atacado de Varejo</span>
-                                </div>
-                            </div><!--item holder-->
-                        </div> <!--item loop-->
-                        <div class="item">
-                            <div class="item_holder">
-                                <a href="#"><img src="images/men/4.jpg" alt="" class="img-responsive"></a>
-                                <div class="title">
-                                    <h5>Black & blue <br>Backpack</h5>
-                                    <span class="price">$45.99</span>
-                                </div>
-                            </div><!--item holder-->
-                        </div> <!--item loop-->
-                        <div class="item">
-                            <div class="item_holder">
-                                <a href="#"><img src="images/men/5.jpg" alt="" class="img-responsive"></a>
-                                <div class="title">
-                                    <h5>Black & blue <br>Laptop bag</h5>
-                                    <span class="price">$45.99</span>
-                                </div>
-                            </div><!--item holder-->
-                        </div> <!--item loop-->
-                    </div>
-                </div>
-                <!--owl end-->
+                 <!-- Div de lista de produtos -->
+                 @foreach($produtos as $p)
+                 <div id='exemplo' class="col-sm-6 col-md-3 ">
+                     <div class="item_holder ">
+                         @foreach ($p->images as &$a)
+                             {{-- {{ $a->imagem }} --}}
+                         @endforeach
+                         @for($i = 0; $i < $p->images->count(); $i++)
+                         <a href="#"><img src="/storage/{{ $a->imagem }}" alt="" class="img-responsive"></a>
+                         @endfor
+                         <div class="title">
+                             <h4>{{ $p->nome }}</h4>
+                             <span class="price">{{ $p->categoria->nome }}</span>
+                         </div>
+                         <div class="space-15"></div> 
+                         <a href="{{ route('detalhes', $p->id ) }}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
+                             data-original-title="Ver Detalhes">Ver Detalhes</a>
+                     </div>
+                 </div>
+                 @endforeach
+                 <!--item holder-->
             </div><!--similar products-->
-
         </div>
         <div class="space-60"></div>
        
