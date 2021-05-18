@@ -8,7 +8,9 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $produtos = \App\Produto::paginate(8);
+        // return dd($produtos);
+        return view('index', compact('produtos'));
     }
 
     public function detalhesProdutos()

@@ -74,13 +74,13 @@
                                     Acessórios para Lar e Escritórios. Melhor atendimento e o menor preço. Trabalhamos
                                     no Atacado e Varejo." </p>
                                 <ul class="list-inline social-footer">
-                                    <li><a href="/Site/https://www.facebook.com/IbiapinaDescartaveis"
+                                    <li><a href="https://www.facebook.com/IbiapinaDescartaveis"
                                             data-toggle="tooltip" data-placement="top" target="_blank"
                                             data-title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="/Site/https://www.instagram.com/ibiapinadescartaveis_/" target="_blank"
+                                    <li><a href="https://www.instagram.com/ibiapinadescartaveis_/" target="_blank"
                                             data-toggle="tooltip" data-placement="top" data-title="Instagram"><i
                                                 class="fa fa-instagram"></i></a></li>
-                                    <li><a href="/Site/https://api.whatsapp.com/send?phone=5596981373836&text="
+                                    <li><a href="https://api.whatsapp.com/send?phone=5596981373836&text="
                                             data-toggle="tooltip" data-placement="top" target="_blank"
                                             data-title="Whatsapp"><i class="fa fa-whatsapp"></i></a></li>
 
@@ -91,15 +91,15 @@
                             <div class="col-md-4 margin-b-30">
                                 <h3>Meta Tags </h3>
                                 <div class="tags clearfix">
-                                    <a href="/Site/#">Descartáveis</a>
-                                    <a href="/Site/#">Variedades</a>
-                                    <a href="/Site/#">Produtos de Limpeza</a>
-                                    <a href="/Site/#">Acessórios</a>
-                                    <a href="/Site/#">Casa</a>
-                                    <a href="/Site/#">Escritórios</a>
-                                    <a href="/Site/#">Atacado</a>
-                                    <a href="/Site/#">Varejo</a>
-                                    <a href="/Site/#">Delivery</a>
+                                    <a href="#">Descartáveis</a>
+                                    <a href="#">Variedades</a>
+                                    <a href="#">Produtos de Limpeza</a>
+                                    <a href="#">Acessórios</a>
+                                    <a href="#">Casa</a>
+                                    <a href="#">Escritórios</a>
+                                    <a href="#">Atacado</a>
+                                    <a href="#">Varejo</a>
+                                    <a href="#">Delivery</a>
                                 </div>
                             </div>
                             <div class="col-md-4 margin-b-30">
@@ -127,21 +127,21 @@
                 </footer>
                 <div class="footer-bottom">
                     <div class="container text-center">
-                        <h3><a href="/Site/index.html"><img src="/Site/images/logotransparente.png" width="150px"
+                        <h3><a href="#"><img src="/Site/images/logotransparente.png" width="150px"
                                     alt=""></a></h3>
                         <ul class="list-inline">
-                            <li><a href="/Site/#">Home</a></li>
-                            <li><a href="/Site/#sobre">Sobre</a></li>
-                            <li><a href="/Site/#produtos">Produtos</a></li>
-                            <li><a href="/Site/#contact">Contato</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#contact">Contato</a></li>
                         </ul>
 
-                        <span class="copyright">&copy; Copyright 2021, Todos os direitos reservados a Ibiapina
+                        <span class="copyright">&copy; Copyright {{ date('Y') }}, Todos os direitos reservados a Ibiapina
                             Descartáveis e Variedades.</span>
                     </div>
                     <div class="container text-center">
                         <span class="copyright">Desenvolvido por </span>
-                        <h3><a href=h/Site/ttps://agenciawds.com.br target="_blank"> <img src="/Site/images/wds.png"
+                        <h3><a href=https://agenciawds.com.br target="_blank"> <img src="/Site/images/wds.png"
                                     width="80px" alt=""></a></h3>
                     </div>
                 </div>
