@@ -73,21 +73,18 @@
             <div class="similar-products">
                 <h2 class="section-heading">Produtos Similares</h2>
                  <!-- Div de lista de produtos -->
-                 @foreach($produtos as $p)
+                 @foreach($produtos as $produto)
                  <div id='exemplo' class="col-sm-6 col-md-3 ">
                      <div class="item_holder ">
-                         @foreach ($p->images as &$a)
-                             {{-- {{ $a->imagem }} --}}
-                         @endforeach
-                         @for($i = 0; $i < $p->images->count(); $i++)
-                         <a href="#"><img src="/storage/{{ $a->imagem }}" alt="" class="img-responsive"></a>
-                         @endfor
+                        @foreach($produto->image as $imagem )
+                         <a href="#"><img src="/storage/{{ $imagem->imagem }}" alt="" class="img-responsive"></a>
+                        @endforeach
                          <div class="title">
-                             <h4>{{ $p->nome }}</h4>
-                             <span class="price">{{ $p->categoria->nome }}</span>
+                             <h4>{{ $produto->nome }}</h4>
+                             <span class="price">{{ $produto->categoria->nome }}</span>
                          </div>
                          <div class="space-15"></div> 
-                         <a href="{{ route('detalhes', $p->id ) }}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
+                         <a href="{{ route('detalhes', $produto->id ) }}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
                              data-original-title="Ver Detalhes">Ver Detalhes</a>
                      </div>
                  </div>

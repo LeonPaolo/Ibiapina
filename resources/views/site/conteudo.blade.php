@@ -223,54 +223,20 @@
             <div class="container">
                 <h2 class="section-heading">Mais Vendidos</h2>
                 <div class="row">
+                    @foreach($plus as $p)
                     <div class="col-sm-6 col-md-3 ">
                         <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/havaianas.png" alt=""
-                                    class="img-responsive"></a>
+                            @foreach ($p->image as $item)                                
+                                <a href="{{ route('detalhes', $p->id ) }}"><img src="/storage/{{ $item->imagem }}" alt="" class="img-responsive"></a>
+                            @endforeach
                             <div class="title">
-                                <h5>Havaianas<br>Atacado e Varejo</h5>
+                                <h5>{{ $p->nome }}<br>Atacado e Varejo</h5>
                                 <span class="price"></span>
                             </div>
                         </div>
                         <!--item holder-->
                     </div>
-                    <!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder ">
-
-                            <a href="/Site/#"><img src="/Site/images/produtos/galvanotek.png" alt=""
-                                    class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Embalagens Galvanotek<br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div>
-                        <!--item holder-->
-                    </div>
-                    <!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/plaszon.png" alt=""
-                                    class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Sacolas Plaszom <br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div>
-                        <!--item holder-->
-                    </div>
-                    <!--col end-->
-                    <div class="col-sm-6 col-md-3 ">
-                        <div class="item_holder">
-                            <a href="/Site/#"><img src="/Site/images/produtos/wyda.png" alt=""
-                                    class="img-responsive"></a>
-                            <div class="title">
-                                <h5>Wyda Embalagens<br>Atacado e Varejo</h5>
-                                <span class="price"></span>
-                            </div>
-                        </div>
-                        <!--item holder-->
-                    </div>
+                    @endforeach
                     <!--col end-->
                 </div>
                 <!--row-->
@@ -310,7 +276,9 @@
                     @foreach($produtos as $produto)
                     <div id='exemplo' class="col-sm-6 col-md-3 ">
                         <div class="item_holder ">
-                            <a href="#"><img src="/Site/images/produtos/plaszon.png" alt="" class="img-responsive"></a>
+                            @foreach($produto->image as $img)
+                            <a href="#"><img src="/storage/{{ $img->imagem }}" alt="" class="img-responsive"></a>
+                            @endforeach
                             <div class="title">
                                 <h4>{{ $produto->nome }}</h4>
                                 <span class="price">{{ $produto->categoria->nome }}</span>

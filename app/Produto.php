@@ -20,4 +20,8 @@ class Produto extends Model
     {
         return $this->hasMany('App\Image');
     }
+    public function image()
+    {
+        return $this->images('App\Image')->limit(1);
+    }
 }
