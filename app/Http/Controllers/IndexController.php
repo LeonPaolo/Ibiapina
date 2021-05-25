@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
@@ -23,7 +24,14 @@ class IndexController extends Controller
 
     public function produtos()
     {
-        return view('listarProdutos');
+        $produtos = \App\Produto::all();
+        $marcas = \App\Marca::all();
+        $categorias = \App\Categoria::all();
+        return view('listarProdutos', compact('produtos', 'marcas', 'categorias'));
+    }
+    public function filtro()
+    {
+        return \App\Produto::with('marca')->with('categoria')->with('images')->get();
     }
 }
 

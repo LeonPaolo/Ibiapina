@@ -24,18 +24,22 @@
                         
                         <form action="" class="form form-inline" method="post">
                             <label for="pesquisa">Filtrar por: Marca</label>
-                            <select name="nomeMarca"  id="idMarca" class="browser-defaut">
+                            <select name="nomeMarca"  id="marca" class="browser-defaut">
                                 <option value="">Selecione</option>
-                                <option value="marca">Plaszom</option>
+                                @foreach($marcas as $marca)
+                                <option value="{{ $marca->id }}">{{ $marca->nome }}</option>
+                                @endforeach
                             </select>
                         </form>
                     </div>
                     <div class="col-sm-3 input-field">
                         <form action="" class="form form-inline" method="post">
                             <label for="pesquisa">Categorias</label>
-                            <select name="nomeMarca" onChange="carregaUsuario()" id="idMarca" class="browser-defaut">
+                            <select name="nomeMarca"  id="categoria" class="browser-defaut">
                                 <option value="">Selecione</option>
-                                <option value="marca">Descartaveis</option>
+                                @foreach($categorias as $categoria)
+                                <option value="{{ $categoria->id }}">{{ $categoria->nome }}</option>
+                                @endforeach
                             </select>
                         </form>
                     </div>
@@ -47,21 +51,25 @@
                     </div>
 
                     <a href="javascript:void(0)" class="search-toggle"><i class="fa fa-search"></i>  Buscar</a>
-                    <div class="space-60"></div>
+                    <div class="space-60" id="filtros"></div>
 
                     <!-- Div de lista de produtos -->
-                    <div id='exemplo' class="col-sm-6 col-md-3 ">
+                    @foreach($produtos as $produto) 
+                    <div id='exemplo' class="col-sm-6 col-md-3 velho">
                         <div class="item_holder ">
-                            <a href="#"><img src="/Site/images/produtos/plaszon.png" alt="" class="img-responsive"></a>
+                            @foreach ($produto->image as $item)                                
+                                <a href="{{ route('detalhes', $produto->id ) }}"><img src="/storage/{{ $item->imagem }}" alt="" class="img-responsive"></a>
+                            @endforeach
                             <div class="title">
-                                <h4>Sacolas Plasticas</h4>
-                                <span class="price">Plaszom</span>
+                                <h4>{{ $produto->nome }}</h4>
+                                <span class="price">{{ $produto->marca->nome }}</span>
                             </div>
                             <div class="space-15"></div> 
-                            <a href="{{'produtos/detalhes'}}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
+                            <a href="{{ route('detalhes', $produto->id ) }}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
                                 data-original-title="Ver Detalhes">Ver Detalhes</a>
                         </div>
                     </div>
+                    @endforeach
                     <!--item holder-->
                 </div>
                 <!--col end-->
