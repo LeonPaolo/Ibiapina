@@ -233,6 +233,8 @@
                                 <h5>{{ $p->nome }}<br>Atacado e Varejo</h5>
                                 <span class="price"></span>
                             </div>
+                            <a href="{{ route('detalhes', $p->id ) }}" data-toggle="tooltip" data-placement="top" title="" class="btn btn-skin"
+                                data-original-title="Ver Detalhes">Ver Detalhes</a>
                         </div>
                         <!--item holder-->
                     </div>
@@ -250,10 +252,10 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 text-center">
                             <h1><span>Fale com um de nossos vendedores</span></h1>
-                            <a href='/Site/https://web.whatsapp.com/send?phone=5596981373836&text=' target="_blank"
+                            <a href='https://web.whatsapp.com/send?phone=5596981373836&text=' target="_blank"
                                 class="btn web btn-skin btn-lg"><i class="fa fa-whatsapp"> </i> Falar com um vendedor
                             </a>
-                            <a href='/Site/https://api.whatsapp.com/send?phone=5596981373836&text=' target="_blank"
+                            <a href='https://api.whatsapp.com/send?phone=5596981373836&text=' target="_blank"
                                 class="btn Api btn-skin btn-lg"><i class="fa fa-whatsapp"> </i> Falar com um vendedor
                             </a>
                         </div>
