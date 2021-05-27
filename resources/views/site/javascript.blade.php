@@ -46,70 +46,285 @@
  </script>	
  <script>
     $(document).ready(function () {
+    $('#vendidos').val(this.checked);
+    $('#retirar').val(this.checked);
+    $("#retirar").change(function(){
+        var retirar = $('#retirar').is(":checked");
+        if(retirar == true){
+            $("#marca").val( $('option:contains("")').val() );
+            $("#categoria").val( $('option:contains("")').val() );
+            $('#vendidos, #retirar').each(function () {
+                if (this.checked) this.checked = false;
+                $('.velho').show()
+                $('.novo').remove()
+                $('.nada').remove()
+            })
+        }
+    })
 
-$('#marca, #categoria').change(function () {
-
+$('#marca, #categoria, #vendidos').change(function () {
     var marca = document.getElementById('marca');
     var cat = document.getElementById('categoria');
+    var vendido = $('#vendidos').is(":checked");
 
     marcaValor = marca.options[marca.selectedIndex].value;
     catValor = cat.options[cat.selectedIndex].value;
-
-    $.get('/filtro', function(data){
-        $('.novo').remove()
-        $('.velho').hide()
-        $.each(data, function(index, res){
-            if(catValor != "" && marcaValor != ""){
-                if(res.categoria.id == catValor && res.marca.id == marcaValor ){
-                         $("#filtros").after(
-                            "<div class='col-sm-6 col-md-3 novo'>" +
-                                "<div class='item_holder'>" +
-                                    "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
-                                    "<div class='title'>" +
-                                        "<h4> " + res.nome + " </h4>" +
-                                        "<span class='price'> " + res.marca.nome + " </span>" +
-                                    "</div>" +
-                                    "<div class='space-15'></div> </div>" +
-                                    "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
-                                "</div>" +
-                            "</div>"
-                        )
-                }
-            }else if(catValor == "" && marcaValor != ""){
-                if(res.marca.id == marcaValor ){
-                         $("#filtros").after(
-                            "<div class='col-sm-6 col-md-3 novo'>" +
-                                "<div class='item_holder'>" +
-                                    "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
-                                    "<div class='title'>" +
-                                        "<h4> " + res.nome + " </h4>" +
-                                        "<span class='price'> " + res.marca.nome + " </span>" +
-                                    "</div>" +
-                                    "<div class='space-15'></div> </div>" +
-                                    "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
-                                "</div>" +
-                            "</div>"
-                        )
-                }
+    //filtros com mais vendidos igual a true
+    if(vendido == true && catValor == "" && marcaValor == ""){
+        $.get('/maisVendido/s', function(data){
+            if(data.length > 0){
+                $('.novo').remove()
+                $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
             }else{
-                if(res.categoria.id == catValor ){
-                         $("#filtros").after(
-                            "<div class='col-sm-6 col-md-3 novo'>" +
-                                "<div class='item_holder'>" +
-                                    "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
-                                    "<div class='title'>" +
-                                        "<h4> " + res.nome + " </h4>" +
-                                        "<span class='price'> " + res.marca.nome + " </span>" +
-                                    "</div>" +
-                                    "<div class='space-15'></div> </div>" +
-                                    "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                $('.novo').remove()
+                $('.nada').remove()
+                $("#filtros").after(
+                    "<div class='col-sm-6 col-md-3 nada'>" +
+                            "<div class='item_holder'>" +
+                                "<div class='title'>" +
+                                    "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                            "</div>"
-                        )
-                }
+                                "<div class='space-15'></div> </div>" +
+                            "</div>" +
+                    "</div>"
+                )
             }
         });
-    });
+    }else if(vendido == true && catValor == "" && marcaValor != ""){
+        $.get('/maisVendidoMarca/s/' + marcaValor, function(data){
+            if(data.length > 0){
+                $('.novo').remove()
+                $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
+            }else{
+                $('.novo').remove()
+                $('.nada').remove()
+                $("#filtros").after(
+                    "<div class='col-sm-6 col-md-3 nada'>" +
+                            "<div class='item_holder'>" +
+                                "<div class='title'>" +
+                                    "<h4> Nada encontrado </h4>" +
+                                "</div>" +
+                                "<div class='space-15'></div> </div>" +
+                            "</div>" +
+                    "</div>"
+                )
+            }
+        });
+    }else if(vendido == true && catValor != "" && marcaValor == ""){
+        $.get('/maisVendidoCategoria/s/' + catValor, function(data){
+            if(data.length > 0){
+                $('.novo').remove()
+                $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
+            }else{
+                $('.novo').remove()
+                $('.nada').remove()
+                $("#filtros").after(
+                    "<div class='col-sm-6 col-md-3 nada'>" +
+                            "<div class='item_holder'>" +
+                                "<div class='title'>" +
+                                    "<h4> Nada encontrado </h4>" +
+                                "</div>" +
+                                "<div class='space-15'></div> </div>" +
+                            "</div>" +
+                    "</div>"
+                )
+            }
+        });
+    }else if(vendido == true && catValor != "" && marcaValor != ""){
+        $.get('/maisVendidoCategoriaMarca/s/' + catValor + '/' + marcaValor, function(data){
+        if(data.length > 0){
+            $('.novo').remove()
+            $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
+        }else{
+            $('.novo').remove()
+            $('.nada').remove()
+            $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 nada'>" +
+                        "<div class='item_holder'>" +
+                            "<div class='title'>" +
+                                "<h4> Nada encontrado </h4>" +
+                            "</div>" +
+                            "<div class='space-15'></div> </div>" +
+                        "</div>" +
+                "</div>"
+            )
+        }
+        });
+    }
+    //filtros normais
+    else if(vendido == false && catValor != "" && marcaValor == ""){
+        $.get('/FiltroCategoria/' + catValor, function(data){
+            if(data.length > 0){
+                $('.novo').remove()
+                $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
+            }else{
+                $('.novo').remove()
+                $('.nada').remove()
+                $("#filtros").after(
+                    "<div class='col-sm-6 col-md-3 nada'>" +
+                            "<div class='item_holder'>" +
+                                "<div class='title'>" +
+                                    "<h4> Nada encontrado </h4>" +
+                                "</div>" +
+                                "<div class='space-15'></div> </div>" +
+                            "</div>" +
+                    "</div>"
+                )
+            }
+        });
+    }else if(vendido == false && catValor == "" && marcaValor != ""){
+        $.get('/FiltroMarca/' + marcaValor, function(data){
+            if(data.length > 0){
+                $('.novo').remove()
+                $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
+            }else{
+                $('.novo').remove()
+                $('.nada').remove()
+                $("#filtros").after(
+                    "<div class='col-sm-6 col-md-3 nada'>" +
+                            "<div class='item_holder'>" +
+                                "<div class='title'>" +
+                                    "<h4> Nada encontrado </h4>" +
+                                "</div>" +
+                                "<div class='space-15'></div> </div>" +
+                            "</div>" +
+                    "</div>"
+                )
+            }
+        });
+    }else if(vendido == false && catValor != "" && marcaValor != ""){
+        $.get('/FiltroMarcaCategoria/' + marcaValor + '/' + catValor, function(data){
+            if(data.length > 0){
+                $('.novo').remove()
+                $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
+            }else{
+                $('.novo').remove()
+                $('.nada').remove()
+                $("#filtros").after(
+                    "<div class='col-sm-6 col-md-3 nada'>" +
+                            "<div class='item_holder'>" +
+                                "<div class='title'>" +
+                                    "<h4> Nada encontrado </h4>" +
+                                "</div>" +
+                                "<div class='space-15'></div> </div>" +
+                            "</div>" +
+                    "</div>"
+                )
+            }
+        });
+    }
 });
 
 });

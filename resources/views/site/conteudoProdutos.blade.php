@@ -46,7 +46,9 @@
                     <div class="col-sm-3 input-field">
                         <form action="" class="form" method="post">
                             <label for="pesquisa">Mais Vendidos</label>
-                            <input type="checkbox" aria-label="...">
+                            <input type="checkbox" aria-label="..." id="vendidos">
+                            <label for="retirar">Retirar os filtros</label>
+                            <input type="checkbox" aria-label="..." id="retirar">
                         </form>
                     </div>
 

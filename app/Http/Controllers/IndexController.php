@@ -29,10 +29,6 @@ class IndexController extends Controller
         $categorias = \App\Categoria::all();
         return view('listarProdutos', compact('produtos', 'marcas', 'categorias'));
     }
-    public function filtro()
-    {
-        return \App\Produto::with('marca')->with('categoria')->with('images')->get();
-    }
 }
 
 

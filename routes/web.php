@@ -7,7 +7,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'IndexController@index');
 Route::get('/produtos', 'IndexController@produtos');
 Route::get('/produtos/detalhes/{id}', 'IndexController@detalhesProdutos')->name('detalhes');
-Route::get('filtro', 'IndexController@filtro');
+
+//Filtros com mais vendidos
+Route::get('maisVendido/{status}', 'FiltroController@maisVendido');
+Route::get('maisVendidoMarca/{status}/{marca}', 'FiltroController@maisVendidoMarca');
+Route::get('maisVendidoCategoria/{status}/{categoria}', 'FiltroController@maisVendidoCategoria');
+Route::get('maisVendidoCategoriaMarca/{status}/{categoria}/{marca}', 'FiltroController@maisVendidoCategoriaMarca');
+//filtros normais
+Route::get('FiltroCategoria/{categoria}', 'FiltroController@FiltroCategoria');
+Route::get('FiltroMarca/{marca}', 'FiltroController@FiltroMarca');
+Route::get('FiltroMarcaCategoria/{marca}/{categoria}', 'FiltroController@FiltroMarcaCategoria');
 
 Auth::routes(['register'=> false, 'reset' => false, 'verify' => false]);
 

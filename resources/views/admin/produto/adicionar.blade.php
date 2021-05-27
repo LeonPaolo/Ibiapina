@@ -167,7 +167,7 @@ Todos os direitos reservados.
                 },
                 "fotos[]": {
                     required: "Imagens obrigatório",
-                    filesize: 2000000,
+                    filesize: "O tamanho do arquivo deve ser menor que 2MB",
                     filelength: 'Selecione no máximo 3 arquivos'
                 },
                 descricao:{
