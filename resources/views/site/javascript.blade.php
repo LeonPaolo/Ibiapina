@@ -85,7 +85,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -100,7 +100,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                                 "<div class='title'>" +
                                     "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                                "<div class='space-15'></div> </div>" +
+                                "<div class='space-15'></div>" +
                             "</div>" +
                     "</div>"
                 )
@@ -121,7 +121,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -136,7 +136,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                                 "<div class='title'>" +
                                     "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                                "<div class='space-15'></div> </div>" +
+                                "<div class='space-15'></div>" +
                             "</div>" +
                     "</div>"
                 )
@@ -157,7 +157,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -172,7 +172,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                                 "<div class='title'>" +
                                     "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                                "<div class='space-15'></div> </div>" +
+                                "<div class='space-15'></div>" +
                             "</div>" +
                     "</div>"
                 )
@@ -193,7 +193,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -208,7 +208,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<div class='title'>" +
                                 "<h4> Nada encontrado </h4>" +
                             "</div>" +
-                            "<div class='space-15'></div> </div>" +
+                            "<div class='space-15'></div>" +
                         "</div>" +
                 "</div>"
             )
@@ -231,7 +231,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -246,7 +246,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                                 "<div class='title'>" +
                                     "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                                "<div class='space-15'></div> </div>" +
+                                "<div class='space-15'></div>" +
                             "</div>" +
                     "</div>"
                 )
@@ -267,7 +267,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -282,7 +282,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                                 "<div class='title'>" +
                                     "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                                "<div class='space-15'></div> </div>" +
+                                "<div class='space-15'></div>" +
                             "</div>" +
                     "</div>"
                 )
@@ -303,7 +303,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -318,7 +318,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                                 "<div class='title'>" +
                                     "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                                "<div class='space-15'></div> </div>" +
+                                "<div class='space-15'></div>" +
                             "</div>" +
                     "</div>"
                 )
@@ -345,7 +345,7 @@ $(document).ready(function(){
                             "<h4> " + res.nome + " </h4>" +
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
-                        "<div class='space-15'></div> </div>" +
+                        "<div class='space-15'></div>" +
                         "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
@@ -361,7 +361,7 @@ $(document).ready(function(){
                                 "<div class='title'>" +
                                     "<h4> Nada encontrado </h4>" +
                                 "</div>" +
-                                "<div class='space-15'></div> </div>" +
+                                "<div class='space-15'></div>" +
                             "</div>" +
                     "</div>"
                 )
