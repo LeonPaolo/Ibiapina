@@ -86,7 +86,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
@@ -122,7 +122,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
@@ -158,7 +158,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
@@ -194,7 +194,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
@@ -232,7 +232,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
@@ -268,7 +268,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
@@ -304,7 +304,7 @@ $('#marca, #categoria, #vendidos').change(function () {
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
@@ -346,7 +346,7 @@ $(document).ready(function(){
                             "<span class='price'> " + res.marca.nome + " </span>" +
                         "</div>" +
                         "<div class='space-15'></div> </div>" +
-                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                        "<a href='/produtos/detalhes/" + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
                     "</div>" +
                 "</div>"
                 )
