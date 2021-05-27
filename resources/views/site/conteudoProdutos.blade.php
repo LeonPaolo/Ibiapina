@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-sm-10 col-sm-offset-1">
                             <form>
-                                <input type="text" class="form-control" placeholder="Escreva sua busca">
+                                <input type="text" class="form-control" placeholder="Escreva o nome do produto" id="busca">
                                 <span class="search-close"><i class="fa fa-times"></i></span>
                             </form>
                         </div>

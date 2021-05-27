@@ -328,4 +328,45 @@ $('#marca, #categoria, #vendidos').change(function () {
 });
 
 });
+$(document).ready(function(){
+  $("#busca").on("keyup", function() {
+    var value = $(this).val();
+    $.get('/busca/' + value, function(data){
+        if(data.length > 0){
+                $('.novo').remove()
+                $('.nada').remove()
+            $.each(data, function(index, res){
+                $('.velho').hide()
+                $("#filtros").after(
+                "<div class='col-sm-6 col-md-3 novo'>" +
+                    "<div class='item_holder'>" +
+                        "<a href='/produtos/detalhes/" + res.id + "'><img src='/storage/" + res.images[0].imagem + "' class='img-responsive'></a>" +
+                        "<div class='title'>" +
+                            "<h4> " + res.nome + " </h4>" +
+                            "<span class='price'> " + res.marca.nome + " </span>" +
+                        "</div>" +
+                        "<div class='space-15'></div> </div>" +
+                        "<a href='detalhes/ " + res.id + "' data-toggle='tooltip' data-placement='top' title='' class='btn btn-skin'  data-original-title='Ver Detalhes'>Ver Detalhes</a>" +
+                    "</div>" +
+                "</div>"
+                )
+            });
+            }else{
+                $('.velho').hide()
+                $('.novo').remove()
+                $('.nada').remove()
+                $("#filtros").after(
+                    "<div class='col-sm-6 col-md-3 nada'>" +
+                            "<div class='item_holder'>" +
+                                "<div class='title'>" +
+                                    "<h4> Nada encontrado </h4>" +
+                                "</div>" +
+                                "<div class='space-15'></div> </div>" +
+                            "</div>" +
+                    "</div>"
+                )
+            }
+    });
+  });
+});
 </script>

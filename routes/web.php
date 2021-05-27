@@ -17,6 +17,8 @@ Route::get('maisVendidoCategoriaMarca/{status}/{categoria}/{marca}', 'FiltroCont
 Route::get('FiltroCategoria/{categoria}', 'FiltroController@FiltroCategoria');
 Route::get('FiltroMarca/{marca}', 'FiltroController@FiltroMarca');
 Route::get('FiltroMarcaCategoria/{marca}/{categoria}', 'FiltroController@FiltroMarcaCategoria');
+//Busca
+Route::get('busca/{produto}', 'FiltroController@busca');
 
 Auth::routes(['register'=> false, 'reset' => false, 'verify' => false]);
 

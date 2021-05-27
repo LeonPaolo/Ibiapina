@@ -38,4 +38,11 @@ class FiltroController extends Controller
     {
         return \App\Produto::where('marca_id', $marca)->where('categoria_id', $categoria)->with('marca')->with('categoria')->with('images')->get();
     }
+
+    //Busca por produto
+
+    public function busca($produto)
+    {
+        return \App\Produto::where('nome', 'like', '%'.$produto.'%')->with('marca')->with('categoria')->with('images')->get();    
+    }
 }
