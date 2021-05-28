@@ -279,7 +279,7 @@
                     <div id='exemplo' class="col-sm-6 col-md-3 ">
                         <div class="item_holder ">
                             @foreach($produto->image as $img)
-                            <a href="#"><img src="/storage/{{ $img->imagem }}" alt="" class="img-responsive"></a>
+                            <a href="{{ route('detalhes', $produto->id ) }}"><img src="/storage/{{ $img->imagem }}" alt="" class="img-responsive"></a>
                             @endforeach
                             <div class="title">
                                 <h4>{{ $produto->nome }}</h4>

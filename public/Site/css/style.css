@@ -1448,6 +1448,8 @@ del {
 .single-product .single-product-slider .item img {
   display: block;
   margin: 0 auto;
+  width: 400px;
+  height: 400px;
 }
 .single-product .owl-theme .owl-controls {
   margin-top: 10px;

@@ -60,7 +60,7 @@
                     <div id='exemplo' class="col-sm-6 col-md-3 velho">
                         <div class="item_holder ">
                             @foreach ($produto->image as $item)                                
-                                <a href="{{ route('detalhes', $produto->id ) }}"><img src="/storage/{{ $item->imagem }}" alt="" class="img-responsive"></a>
+                                <a href="{{ route('detalhes',$produto->id ) }}"><img src="/storage/{{ $item->imagem }}" alt="Abrir Imagem" class="img-responsive"></a>
                             @endforeach
                             <div class="title">
                                 <h4>{{ $produto->nome }}</h4>
@@ -74,9 +74,5 @@
                     @endforeach
                     <!--item holder-->
                 </div>
-                <!--col end-->
-                </div>
-                <!--row-->
-                </div>
-                </div>
+               
             </section>

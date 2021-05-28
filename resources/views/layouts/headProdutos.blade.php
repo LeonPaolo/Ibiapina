@@ -10,18 +10,15 @@
         <!-- Bootstrap --> 
         <link href="{{ asset('/Site/bootstrap/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet">
         <!--plugins-->
-        <link href="{{ asset('/Site/bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('/Site/bower_components/flexslider/flexslider.css') }}" rel="stylesheet">
-        <link href="{{ asset('/Site/bower_components/lightbox2/dist/css/lightbox.css') }}" rel="stylesheet">
-        <link href="{{ asset('/Site/owl-carousel/assets/owl.carousel.css') }}" rel="stylesheet">
-        <link href="{{ asset('/Site/owl-carousel/assets/owl.theme.default.css') }}" rel="stylesheet">  
+        <link href="{{ asset('/Site/bower_components/font-awesome/css/font-awesome.min.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('/Site/bower_components/flexslider/flexslider.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('/Site/owl-carousel/assets/owl.carousel.css') }}" type="text/css" rel="stylesheet">
+        <link href="{{ asset('/Site/owl-carousel/assets/owl.theme.default.css') }}" type="text/css"  rel="stylesheet">
+        
         <link href="{{ asset('/Site/pe-icons/Pe-icon-7-stroke.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('/Site/custom-scrollbar/jquery.mCustomScrollbar.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('/Site/css/yamm.css') }}" rel="stylesheet">
 
-       
-
-     
         <!--revolution css-->
         <link href="{{ asset('/Site/revolution/css/navigation.css') }}" type="text/css" rel="stylesheet">
         <link href="{{ asset('/Site/revolution/css/layers.css') }}" type="text/css" rel="stylesheet">
@@ -48,10 +45,10 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right scroll-to">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#produtos">Produtos</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="/#home">Home</a></li>
+                        <li><a href="/#sobre">Sobre</a></li>
+                        <li><a href="/#produtos">Produtos</a></li>
+                        <li><a href="/#contact">Contato</a></li>
 
                     </ul>
                 </div>
@@ -130,13 +127,13 @@
                 </footer>
                 <div class="footer-bottom">
                     <div class="container text-center">
-                        <h3><a href="#"><img src="/Site/images/logotransparente.png" width="150px"
+                        <h3><a href="/"><img src="/Site/images/logotransparente.png" width="150px"
                                     alt=""></a></h3>
                         <ul class="list-inline">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#produtos">Produtos</a></li>
-                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/#sobre">Sobre</a></li>
+                            <li><a href="/#produtos">Produtos</a></li>
+                            <li><a href="/#contact">Contato</a></li>
                         </ul>
 
                         <span class="copyright">&copy; Copyright {{ date('Y') }}, Todos os direitos reservados a Ibiapina

@@ -1,5 +1,5 @@
 @section('titulo', 'Ibiapina Descartáveis')
-@extends('layouts.head')
+@extends('layouts.headProdutos')
 @section('conteudo')
     @include('site.conteudoProdutos')
 @endsection

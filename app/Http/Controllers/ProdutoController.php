@@ -39,7 +39,7 @@ class ProdutoController extends Controller
                 $image->save();
             }
         };
-        flash('Produto adiconada com sucesso')->success();
+        flash('Produto adiconado com sucesso')->success();
         return redirect()->back();
 
     }
