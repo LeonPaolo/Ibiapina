@@ -327,22 +327,22 @@
                         <div class="col-sm-12 col-md-offset-0 col-xs-offset-3  text-center">
                             <div class="row">
                                 <div class="col-sm-3">
-                                    <a href="/Site/#">
+                                    <a href="#">
                                         <img src="/Site/images/wyda.png" alt="" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="/Site/#">
+                                    <a href="#">
                                         <img src="/Site/images/galvanotek.png" alt="" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="/Site/#">
+                                    <a href="#">
                                         <img src="/Site/images/plaszom.png" alt="" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="col-sm-3">
-                                    <a href="/Site/#">
+                                    <a href="#">
                                         <img src="/Site/images/totalplast.png" alt="" class="img-responsive">
                                     </a>
                                 </div>
@@ -360,41 +360,7 @@
                 <div class="space-30"></div>
                 <!--partners-->
 
-                <div class="row wow fadeInDown" data-wow-delay=".1s">
-                    <div class="col owl-carousel owl-clients owl-theme">
-                        <div class="item">
-                            <img src="/Site/images/plaszom.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/plaszom.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/plaszom.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/plaszom.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/plaszom.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/cl-1.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/cl-2.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/cl-3.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/cl-4.png" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="/Site/images/cl-5.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                </div>
+               
 
                 <!--end partners-->
                 <!--breadcrumb start-->
