@@ -24,6 +24,8 @@ class HomeController extends Controller
     public function index()
     {
         $produtos = \App\Produto::all();
-        return view('home', compact('produtos'));
+        $categorias = \App\Categoria::all();
+        $marcas = \App\Marca::all();
+        return view('home', compact('produtos', 'categorias', 'marcas'));
     }
 }
