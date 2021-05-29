@@ -34,7 +34,7 @@ class FiltroController extends Controller
     {
         return \App\Produto::where('marca_id', $marca)->with('marca')->with('categoria')->with('images')->get();
     }
-    public function FiltroMarcaCategoria($categoria, $marca)
+    public function FiltroMarcaCategoria($marca, $categoria)
     {
         return \App\Produto::where('marca_id', $marca)->where('categoria_id', $categoria)->with('marca')->with('categoria')->with('images')->get();
     }
