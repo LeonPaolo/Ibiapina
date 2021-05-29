@@ -118,11 +118,16 @@ Todos os direitos reservados.
     <script src="{{ asset('/Site/assets/bower_components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('/validation/jquery.validate.min.js') }}"></script>
     <script>
-        $("#produto, #descricao").keyup(function(e) {
+        $("#produto").keyup(function(e) {
             var str = $(this).val();
             str = str.replace(/(^|\s|$)(?!de|do|d$)(.)/g, (geral, match1, match2) => match1 + match2.toUpperCase());
             $(this).val(str);
         });
+        $("#descricao").keyup(function(e){
+            var str = $(this).val();
+            str = str.replace(/(^|\s|$)(?!de|do|d$)(.)/, (geral, match1, match2) => match1 + match2.toUpperCase());
+            $(this).val(str);
+        })
       </script>
 
     <script>

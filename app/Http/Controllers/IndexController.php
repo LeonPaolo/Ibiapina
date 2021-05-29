@@ -17,7 +17,7 @@ class IndexController extends Controller
     public function detalhesProdutos($id)
     {
         $produto = \App\Produto::find($id);
-        $produtos = \App\Produto::where('id', '<>', $produto->id)->paginate(4);
+        $produtos = \App\Produto::where('id', '<>', $produto->id)->where('categoria_id', $produto->categoria_id)->paginate(4);
 
         return view('descricao', compact('produto', 'produtos'));
     }
