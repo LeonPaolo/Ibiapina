@@ -296,7 +296,7 @@
                 <div class="row">
                         <div class="col-sm-10 col-sm-offset-1 text-center">
                           
-                            <a href="{{'produtos'}}"  class="btn web btn-skin btn-lg">Ver Todos</a>
+                            <a href="{{'produtos'}}"  class="btn btn-skin btn-lg">Ver Todos</a>
                             
                         </div>
                     </div>
