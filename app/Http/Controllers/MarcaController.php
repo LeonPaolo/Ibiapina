@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use App\Http\Requests\MarcaRequest;
 
 class MarcaController extends Controller
 {
@@ -15,7 +17,7 @@ class MarcaController extends Controller
     {
         return view('admin.marca.adicionar');
     }
-    public function store(Request $request)
+    public function store(MarcaRequest $request)
     {
         $marca = new \App\Marca();
         $marca->nome = $request->nome;
@@ -34,6 +36,9 @@ class MarcaController extends Controller
     }
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'nome' => Rule::unique('marcas')->ignore($id),
+        ]);
         $marca = \App\Marca::find($id);
         $marca->nome = $request->nome;
         $marca->save();

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use App\Http\Requests\CategoriaRequest;
 
 class CategoriaController extends Controller
 {
@@ -15,7 +17,7 @@ class CategoriaController extends Controller
     {
         return view('admin.categoria.adicionar');
     }
-    public function store(Request $request)
+    public function store(CategoriaRequest $request)
     {
         $categoria = new \App\Categoria();
         $categoria->nome = $request->nome;
@@ -34,6 +36,9 @@ class CategoriaController extends Controller
     }
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'nome' => Rule::unique('categorias')->ignore($id),
+        ]);
         $categoria = \App\Categoria::find($id);
         $categoria->nome = $request->nome;
         $categoria->save();

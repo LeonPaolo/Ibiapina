@@ -42,7 +42,10 @@
                     <div class="form-row">
                       <div class="form-group  col-lg-12">
                           <label for="categoria" class=""> Nome: </label>
-                          <input type="text" id="categoria"  name="nome" required class="form-control" placeholder="Nome da categoria" >
+                          <input type="text" id="categoria"  name="nome" required class="form-control @error('nome') is-invalid @enderror" placeholder="Nome da categoria" >
+                          @error('nome')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                       </div>                       
                     </div>
                 </div>
