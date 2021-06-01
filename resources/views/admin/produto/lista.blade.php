@@ -355,7 +355,7 @@ Todos os direitos reservados.
                     '  <td>' + produto.nome + '</td>' +
                     '  <td>' + produto.categoria.nome + '</td>' +
                     '  <td>' + produto.marca.nome + '</td>' +
-                    '  <td><a class="acessibilidade mr-2 btn btn-secondary btn-sm" href="Produtos/'+ produto.id+'/edit" > <i class="fas fa-edit"></i> Editar</a>' +
+                    '  <td><a class="acessibilidade mr-2 btn btn-secondary btn-sm" href="javascript:void(0);" > <i class="fas fa-edit"></i> Editar</a>' +
                     '  <input class="btn btn-success btn-sm" active ativar="'+ produto.id +'" type="submit" value="Ativar" style="width: 80px;"></td>' +
                     '</tr>';
                 }              
