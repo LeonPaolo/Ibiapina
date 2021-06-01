@@ -31,4 +31,13 @@ Route::group(['middleware' => ['auth']], function(){
     Route::put('/Produto/{id}', 'ProdutoController@ativar')->name('Produto.ativa');
     Route::resource('/User', 'UserController');
     Route::put('/Senha/{id}', 'UserController@senha')->name('Senha.update');
+    //Filtros com mais vendidos
+    Route::get('AdminMaisVendido/{status}', 'AdminFiltroController@maisVendido');
+    Route::get('AdminMaisVendidoMarca/{status}/{marca}', 'AdminFiltroController@maisVendidoMarca');
+    Route::get('AdminMaisVendidoCategoria/{status}/{categoria}', 'AdminFiltroController@maisVendidoCategoria');
+    Route::get('AdminMaisVendidoCategoriaMarca/{status}/{categoria}/{marca}', 'AdminFiltroController@maisVendidoCategoriaMarca');
+    //filtros normais
+    Route::get('AdminFiltroCategoria/{categoria}', 'AdminFiltroController@FiltroCategoria');
+    Route::get('AdminFiltroMarca/{marca}', 'AdminFiltroController@FiltroMarca');
+    Route::get('AdminFiltroMarcaCategoria/{marca}/{categoria}', 'AdminFiltroController@FiltroMarcaCategoria');
 });

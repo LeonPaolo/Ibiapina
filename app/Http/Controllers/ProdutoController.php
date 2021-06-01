@@ -10,7 +10,9 @@ class ProdutoController extends Controller
     public function index()
     {
         $produtos = \App\Produto::withTrashed()->paginate(10);
-        return view('admin.produto.lista', compact('produtos'));
+        $categorias = \App\Categoria::all();
+        $marcas = \App\Marca::all();
+        return view('admin.produto.lista', compact('produtos', 'categorias', 'marcas'));
     }
     public function create()
     {

@@ -291,7 +291,6 @@ $('#marca, #categoria, #vendidos').change(function () {
             }
         });
     }else if(vendido == false && catValor != "" && marcaValor != ""){
-        console.log('oj')
         $.get('/FiltroMarcaCategoria/' + marcaValor + '/' + catValor, function(data){
             if(data.length > 0){
                 $('.novo').remove()
