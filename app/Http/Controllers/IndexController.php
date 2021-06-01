@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Mail\ClientMail;
+use App\Mail\SeedMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -28,6 +30,19 @@ class IndexController extends Controller
         $marcas = \App\Marca::all();
         $categorias = \App\Categoria::all();
         return view('listarProdutos', compact('produtos', 'marcas', 'categorias'));
+    }
+
+    public function form(Request $request)
+    {
+
+            $teste = new \App\Produto();
+            $teste -> nome = $request->nome;
+            $teste -> email = $request->email;
+            $teste -> mensagem = $request->mensagem;
+            Mail::to($teste->email)->send(new ClientMail($teste));
+            Mail::to('ibiapinadescartaveis64@gmail.com')->send(new SeedMail($teste));
+            flash('Mensagem recebida com Sucesso!')->success();
+            return redirect()->back();
     }
 }
 

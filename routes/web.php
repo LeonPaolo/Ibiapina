@@ -17,6 +17,10 @@ Route::get('maisVendidoCategoriaMarca/{status}/{categoria}/{marca}', 'FiltroCont
 Route::get('FiltroCategoria/{categoria}', 'FiltroController@FiltroCategoria');
 Route::get('FiltroMarca/{marca}', 'FiltroController@FiltroMarca');
 Route::get('FiltroMarcaCategoria/{marca}/{categoria}', 'FiltroController@FiltroMarcaCategoria');
+
+//Formulario de contato
+Route::post('contato','IndexController@form')->name('formulario');
+
 //Busca
 Route::get('busca/{produto}', 'FiltroController@busca');
 
